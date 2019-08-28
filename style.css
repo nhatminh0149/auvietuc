@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-item a{
+    font-family: Comic;
+    color: #636363;
+    font-size: 18px;
+}
+.dropdown-menu a:hover{
+    background: #F7CDCD;
+    color: rgba(144, 15, 15, 0.8);
+}
+.list-title{
+    width: 100%;
+    text-align: center;
+}
+
+a.btnAll{ 
+    width: 150px;
+    line-height: 35px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid #842020;
+    color: #fff;
+    background: #842020;
+}
+.row a.btnAll:hover{ 
+    background: white;
+    color: #842020;
+    text-decoration: none;
+}
+hr.line{
+    height: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #842020;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
