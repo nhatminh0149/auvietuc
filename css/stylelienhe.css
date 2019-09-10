@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|CantataOne|Sniglet|DancingScript|Rubik");
+* {
+  box-sizing: border-box;
+}
+
+/* header,
+section {
+  overflow-x: hidden;
+} */
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --DancingScript: "DancingScript", cursive;
+  --Rubik: "Rubik", cursive;
+  --CantataOne: "CantataOne", serif;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to top, #9AF8F8, #46a1c5);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header a {
+    font-family: var(--Sniglet-font);
+    font-size: 0.74em;
+    color: whitesmoke;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+    color: #B31212;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  header .nav-item:last-child {
+    padding-right: 5em;
+  }
+  
+  header .nav-item {
+    padding: 0.3rem;
+    font-size: 18px;
+  }
+  
+  header .navbar-brand {
+    padding-left: 3rem;
+  }
+  
+  header .nav-link:hover {
+    color: #AE3535;
+  }
+  
+  header {
+    background: var(--bggradient);
+  }
+
+
+header .row .col-md-7 {
+  padding: 12vmin 1vmin;
+  padding-bottom: 10vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h5 {
+  padding: 1vmin;
+  letter-spacing: 6px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 2vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+  font-size: 2.3vmin;
+}
+
+
+header .container .col-md-5 .contact{
+  margin: 20px auto;
+  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
+  padding: 20px;
+}
+
+header .container .col-md-5 .contact p{
+  text-align: center;
+  letter-spacing: 1px;  
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: whitesmoke;
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-5 .contact .input,
+.msg .area{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border: 2px solid #e9eaea;
+  font-size: 14px;
+  border-radius: 5px;
+  outline: none;
+  transform: all 0.5s ease;
+}
+
+header .container .col-md-5 .contact .info .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+header .container .col-md-5 .contact .number .input{
+  width: 48%;
+  float: left;
+  margin-right: 4%;
+}
+
+header .container .col-md-5 .contact .info .input:last-child{
+  margin-right: 0;
+}
+header .container .col-md-5 .contact .number .input:last-child{
+  margin-right: 0;
+}
+
+header .container .col-md-5 .contact .msg .area{
+  height: 100px;
+}
+
+header .container .col-md-5 .contact .btn{
+  width: 250px;
+  height: 50px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: var(--light-black);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .container .col-md-5 .contact .input:focus,
+.msg .area:focus{
+    border: 2px solid var(--light-black);
+}
+
+     
+.section-1 {
+  padding: 10vmin 0vmin;
+}
+.section-1 .row .col-md-6 .address h5{
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+.section-1 .row .col-md-6 .address p{
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+}
+
+footer {
+  background: linear-gradient(to bottom,  #9AF8F8, #46a1c5);
+  overflow-x: hidden;
+  margin-top: 5vmin;
+}

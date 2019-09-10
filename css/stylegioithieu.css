@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|CantataOne|Sniglet|DancingScript");
+* {
+  box-sizing: border-box;
+}
+
+/* header,
+section {
+  overflow-x: hidden;
+} */
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --DancingScript: "DancingScript", cursive;
+  --CantataOne: "CantataOne", serif;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to top, #9AF8F8, #46a1c5);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+header a {
+    font-family: var(--Sniglet-font);
+    font-size: 0.74em;
+    color: whitesmoke;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+    color: #B31212;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  header .nav-item:last-child {
+    padding-right: 5em;
+  }
+  
+  header .nav-item {
+    padding: 0.3rem;
+    font-size: 18px;
+  }
+  
+  header .navbar-brand {
+    padding-left: 3rem;
+  }
+  
+  header .nav-link:hover {
+    color: #AE3535;
+  }
+  
+  header {
+    background: var(--bggradient);
+  }
+
+
+
+
+/* Section 1 */
+.section-1 {
+    padding: 10vmin 0;
+  }
+
+  .section-1 .list-title{
+      padding-bottom: 0.1em;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 5.5vmin;
+  }
+
+  .section-1 .list-title-small{
+    color: var(--light-black);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10vmin;
+  }
+
+  .section-1 .row .col-md-6 .pray img {
+    opacity: 0.9;
+    width: 80%;
+    border-radius: 0.2em;
+    box-shadow: 0px 25px 42px rgba(118, 184, 245, 0.3);
+  }
+  
+  .section-1 .row .col-md-6:last-child {
+    position: relative;  /* thiết lập 1 ptu  ko làm ảnh hưởng đến việc hiển thị ban đầu */
+  }
+  
+  .section-1 .row .col-md-6 .panel {
+    position: absolute; /* của một phần tử liên quan đến vị trí của bố mẹ và thay đổi bố cục xung quanh vị trí đó. */
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 12vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(118, 184, 245, 0.3);
+    z-index: 1;
+  }
+  
+  .section-1 .row .col-md-6 .panel h1 {
+    font-weight: bold;
+    padding: 0.4em 0;
+    font-size: 2em;
+  }
+  
+  .section-1 .row .col-md-6 .panel p {
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: var(--DancingScript);
+  }
+
+  /* Section 2 */
+  .section-2 {
+    padding: 30vmin 0vmin 20vmin 0vmin;
+  }
+  .section-2 .col-md-6{
+    padding: 40px 30px 0px 30px;
+  }
+  .section-2 .list-title{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.5vmin;
+}
+.section-2 .list-title-small{
+  color: var(--light-black);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10vmin;
+}
+
+  .section-2 .row .col-md-6 .giangvien img {
+    opacity: 0.9;
+    width: 95%;
+    border-radius: 0.2em;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  }
+  .section-2 .row .col-md-6 .nhanvien img {
+    opacity: 0.9;
+    width: 95%;
+    border-radius: 0.2em;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+  }
+  .section-2 .row .col-md-6 .team h4 {
+    font-family: var(--Sniglet-font);
+    padding: 1vmin 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .section-2 .row .col-md-6 .team1 h4 {
+    font-family: var(--Sniglet-font);
+    padding: 1vmin 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .section-2 .row .col-md-6 .team p {
+    font-family: var(--DancingScript);
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .section-2 .row .col-md-6 .team1 p {
+    font-family: var(--DancingScript);
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+   /* Section 3 */
+  .section-3 {
+    padding: 0;
+  }
+  .section-3 .col-md-6{
+    padding: 40px 30px 0px 30px;
+  }
+  .section-3 .list-title{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5.5vmin;
+}
+  .section-3 .list-title-small{
+    color: var(--light-black);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 7vmin;
+    padding-top: 10vmin;
+  }
+
+.dg-container{
+	width: 100%;
+	height: 450px;
+	position: relative;
+  margin-top: 90px;
+}
+.dg-wrapper{
+	width: 400px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative; 
+	transform-style: preserve-3d;
+	perspective: 400px;
+}
+.dg-wrapper a{
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+
+.dg-wrapper a.dg-transition{
+ 	transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a img{
+	width: 400px;
+	height: 300px;
+	display: block;
+	border: 8px solid white;
+}
+
+.dg-container nav{
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -29px;
+	top: 80%;
+}
+.dg-container nav span{
+	text-indent: 8px;
+	float: left;
+	cursor: pointer;
+	width: 24px;
+	height: 25px;
+	opacity: 0.8;
+  background: no-repeat top left;
+  font-size: 25px;
+}
+.dg-container nav span:hover{
+	opacity: 1;
+}
+.dg-container nav span.dg-next{
+	background-position: top right;
+	margin-left: 10px;
+}
+
+footer {
+  background: linear-gradient(to bottom, #9AF8F8, #46a1c5);
+  overflow-x: hidden;
+  margin-top: 5vmin;
+}
+
+footer .logo{
+  padding: 2vmin 0 2vmin 18vmin;
+}
+footer .pl-5 span{
+  padding: 2vmin 0 0 8vmin;
+}
+footer .about_us{
+  padding: 6vmin 0 0 0;
+}
+footer p > span {
+  color: #ff512f;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+
+        
+        
+ 
+  
+
+  @media only screen and (max-width: 768px) {
+    header .navbar-brand {
+      padding-left: 1rem;
+    }
+    .section-1 .row .col-md-6 .panel {
+      position: initial;
+      width: initial;
+      height: initial;
+    }
+    .section-2 {
+      height: inherit;
+      padding: 20vmin !important;
+    }
+  }
